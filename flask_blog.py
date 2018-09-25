@@ -9,7 +9,7 @@ posts = [
 		'content': 'first post content',
 		'date_posted': 'April 20, 2018'
 	},
-	
+
 	{
 		'author' : 'Jane Doe',
 		'title': 'Blog Post 2',
@@ -26,7 +26,7 @@ def home():
 
 @app.route("/about")
 def about():
-    return render_template('about.html')
+    return render_template('about.html', title = about)
 
 if __name__ == '__main__':
 	app.run(debug=True)
